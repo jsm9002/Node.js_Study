@@ -20,7 +20,7 @@ response.write("<body>")
 request.on('end',function(){
     let post = qs.parse(body)
     console.log(post)
-    response.write(`<p>${post}</p>`)
+    response.write(post)
 })
 response.write("</body>")
 response.write("</body>")

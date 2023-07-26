@@ -15,14 +15,14 @@
             
             </tr>
             <tr>
-                <td height="35px" bgcolor="whitesmoke"> 아이디 <input type="text" name="inputId"></td>  
+                <td height="35px" bgcolor="whitesmoke"> 아이디 <input type="text" name="id"></td>  
                 
             </tr>
             <tr>
-                <td height="35px" bgcolor="whitesmoke"> 비밀번호 <input type="text" name="inputPw"></td>  
+                <td height="35px" bgcolor="whitesmoke"> 비밀번호 <input type="text" name="pw"></td>  
             </tr>
             <tr>
-                <td height="35px" bgcolor="whitesmoke"> 비밀번호 확인 <input type="text"></td>  
+                <td height="35px" bgcolor="whitesmoke"> 비밀번호 확인 <input type="text" name="repw"/></td>  
             </tr>
 
             <tr>
@@ -30,8 +30,10 @@
             
             </tr>
             <tr>
-                <td height="35px" bgcolor="whitesmoke"> 성별 남 <input type="radio" name="gender" value="man" />
+                <!--radio버튼, 체크박스 : name이 같아야한다! -->
+                <td height="35px" bgcolor="whitesmoke"> 성별 : 남 <input type="radio" name="gender" value="man" />
                     여 <input type="radio" name="gender" value="woman"/>
+                </td>
                 
             </tr>
             <tr>
@@ -51,6 +53,7 @@
             
             </tr>
             <tr>
+                <!-- checkbox 선택된 값들이 배열 형태(['축구','야구'])로 넘어감 -->
                 <td height="35px" bgcolor="whitesmoke"> 취미: 축구<input type="checkbox" name="hobby" value="soccer"/>
                     야구<input type="checkbox" name="hobby" value="baseball"/>  농구<input type="checkbox" name="hobby" value="basketball"/>
                 
@@ -60,14 +63,12 @@
             </tr> 
             <tr>
                 <th colspan ="2" bgcolor="gray" height="50px">Step4: 하고 싶은 말</th>
-            
             </tr>
             <tr>
-               
+               <td><textarea name="inputText" id="" cols="56" rows="5" style="resize: none;"></textarea></td>
             </tr>
-      
-
         </table>
+        <input type="submit" value="전송"> 
     </form>
 
 </body>
