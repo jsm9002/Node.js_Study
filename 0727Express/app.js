@@ -28,8 +28,11 @@ const router = require("./router/router")
 // })
 //5. router로 만든 경로를 서버(app)에 등록 시켜주기!
 // 서버에 등록시킨다 ==> 미들웨어
-app.use(router)
+// body영역 허용뒤 -> router 등록! 
+app.use(express.urlencoded({extended:true}))
+app.use(express.json())
 
+app.use(router)
 
 
 

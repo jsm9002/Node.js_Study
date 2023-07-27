@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join</title>
+</head>
+<body>
+    <!-- 1. 회원가입페이지에서 제출버튼을 누르면 id,pw,nick을 /join 라우터로 이동
+         2. join라우터는 Login.html 로 이동
+         3. Login.html에서는 위에서 입력한 ID,PW 값을 입력헀을때만 S.html로 이동 아니라면 F.html로 이동
+     -->
+    <h1>회원가입페이지</h1>
+    <form action="http://localhost:4000/join">
+        ID : <input type="text" name="id"><br>
+        PW : <input type="text" name="pw"><br>
+        NICK : <input type="text" name="nick"><br>
+        <input type="submit"><br>
+    </form>
+</body>
+</html>
